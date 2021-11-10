@@ -1,0 +1,16 @@
+ALTER TABLE `school`.`applicant_faculty_choose` 
+DROP COLUMN `shift4`,
+DROP COLUMN `section4`,
+DROP COLUMN `class4`,
+DROP COLUMN `department4`,
+DROP COLUMN `medium4`,
+DROP COLUMN `shift3`,
+DROP COLUMN `section3`,
+DROP COLUMN `class3`,
+DROP COLUMN `department3`,
+DROP COLUMN `medium3`,
+CHANGE COLUMN `medium2` `medium` VARCHAR(25) NULL DEFAULT NULL ,
+CHANGE COLUMN `department2` `department` VARCHAR(25) NULL DEFAULT NULL ,
+CHANGE COLUMN `class2` `class` VARCHAR(100) NULL DEFAULT NULL ,
+CHANGE COLUMN `section2` `section` VARCHAR(25) NULL DEFAULT NULL ,
+CHANGE COLUMN `shift2` `shift` VARCHAR(25) NULL DEFAULT NULL ;
